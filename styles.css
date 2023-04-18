@@ -1,0 +1,403 @@
+:root {
+    --verde-claro: #bac07f;
+    --verde-escuro: #181f1c;
+    --tom-medio: #274029;
+    --cinza: #ebebeb;
+    --cor-contraste: #890019;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-top: 46px;
+    background-color: var(--verde-claro);
+}
+
+h2 {
+    font-family: 'Karma', serif;
+    font-size: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*------------- Primeira parte da interface -------------*/
+
+.top-page {
+    padding-inline: 100px;
+}
+
+#logo {
+    height: 70px;
+}
+
+.top-page nav ul li a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--verde-escuro);
+}
+
+.top-page nav ul {
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    gap: 62px;
+    align-items: center;
+}
+
+.wrapper-top {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 141px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.apresentacao {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-block: 3%;
+    gap: 5%;
+}
+
+.apresentacao p {
+    color: var(--tom-medio);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    margin-bottom: 7%;
+}
+
+h1 {
+    font-family: 'Karma', serif;
+    font-size: 65px;
+    color: var(--verde-escuro);
+}
+
+#btn-saber-mais {
+    background-color: var(--verde-escuro);
+    border-radius: 20px;
+    border: none;
+
+    height: 50px;
+    width: 65%;
+
+    font-family: 'Karma', serif;
+    font-size: 26px;
+    color: var(--verde-claro);
+    cursor: pointer;
+}
+
+#btn-saber-mais:hover {
+    background-color: var(--cor-contraste);
+}
+
+/*------------- Sobre nós -------------*/
+
+.sobre-nos {
+    padding-inline: 100px;
+    padding-block: 70px;
+    background-image: url(assets/pexels-sohail-nachiti-807598.jpg);
+    background-size: cover;
+    height: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-nos p {
+    color: var(--cinza);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+
+    margin-bottom: 2%;
+}
+
+.sobre-nos h2 {
+    color: var(--verde-claro);
+}
+
+.wrapper-profs {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.prof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--verde-claro);
+    border-radius: 20px;
+
+    padding: 47px 40px 25px 40px;
+}
+
+.prof img {
+    border-radius: 22px;
+    margin-bottom: 13px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 195px;
+    width: 259px;
+}
+
+.prof h3 {
+    color: var(--verde-escuro);
+    font-family: 'Karma', serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.prof p {
+    color: var(--tom-medio);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+/*------------- Módulos -------------*/
+
+.conteudo {
+    margin-top: 80px;
+    padding-inline: 100px;
+    height: 900px;
+}
+
+.conteudo h2 {
+    color: var(--verde-escuro);
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+.wrapper-modulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modulo h3 {
+    color: var(--verde-escuro);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.modulo p {
+    color: var(--verde-escuro);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.modulo hr {
+    border: none;
+    border-top: 1px solid var(--tom-medio);
+    margin-block: 40px;
+}
+
+.wrapper-btn {
+    text-align: center;
+}
+
+#btn-modulos {
+    margin-top: 45px;
+    padding-inline: 45px;
+
+    background-color: var(--cor-contraste);
+    border-radius: 20px;
+    border: none;
+
+    height: 50px;
+
+    font-family: 'Karma', serif;
+    font-size: 26px;
+    color: var(--verde-claro);
+    cursor: pointer;
+}
+
+#btn-modulos:hover {
+    background-color: var(--tom-medio);
+}
+
+/*------------- Stats -------------*/
+
+.stats {
+    margin-inline: 250px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--verde-escuro);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.stats div {
+    padding-block: 15px;
+}
+
+.number {
+    font-size: 45px;
+    color: var(--verde-claro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.stats div p {
+    color: var(--verde-claro);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*------------- Nossos alunos -------------*/
+
+.section-nossos-alunos {
+    background-color: var(--tom-medio);
+    padding: 100px;
+}
+
+.section-nossos-alunos h2 {
+    color: var(--verde-claro);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-alunos {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+}
+
+.aluno {
+    background-color: var(--verde-escuro);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    padding: 30px;
+    color: var(--verde-claro);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aluno img {
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    height: 130px;
+}
+
+.texto-aluno {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.nome-aluno {
+    font-size: 20px;
+}
+
+.relato-aluno {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+/*------------- Formulario -------------*/
+
+section.formulario {
+    padding: 100px;
+    padding-left: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formulario svg {
+    height: 400px;
+}
+
+div.lado-direito {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    width: 45%;
+}
+
+div.lado-direito h2 {
+    font-size: 40px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    border: 1px solid var(--tom-medio);
+    border-radius: 20px;
+    padding: 13px;
+    background-color: var(--verde-claro);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+label {
+    color: var(--verde-escuro);
+}
+
+form button {
+    background-color: var(--verde-escuro);
+    border-radius: 20px;
+
+    font-family: 'Karma', serif;
+    font-size: 20px;
+    color: var(--verde-claro);
+
+    border: none;
+    height: 50px;
+    width: 50%;
+    padding-inline: 25px;
+
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--cor-contraste);
+}
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+footer p {
+    border-top: 1px solid var(--tom-medio);
+    padding-block: 20px;
+}
